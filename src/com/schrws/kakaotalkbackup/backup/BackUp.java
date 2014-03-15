@@ -44,9 +44,9 @@ public class BackUp extends Fragment implements OnClickListener{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View V = inflater.inflate(R.layout.backup_layout, container, false);
 		Button btn1 = (Button) V.findViewById(R.id.button1);
-		Button btn2 = (Button) V.findViewById(R.id.button2);
+		//Button btn2 = (Button) V.findViewById(R.id.button2);
 		btn1.setOnClickListener(this);
-		btn2.setOnClickListener(this);
+		//btn2.setOnClickListener(this);
 		return V;
 	}
 	
@@ -58,13 +58,13 @@ public class BackUp extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch(v.getId()){
-		case R.id.button2:
-			try{
-				Runtime.getRuntime().exec("su -c mkdir /sdcard/KaKaoTalkBackUp");
-			}
-			catch(IOException e){
-			}
-			break;
+		//case R.id.button2:
+			//try{
+				//Runtime.getRuntime().exec("su -c mkdir /sdcard/KaKaoTalkBackUp");
+			//}
+			//catch(IOException e){
+			//}
+			//break;
 		case R.id.button1:
 			try{
 				Runtime.getRuntime().exec("su -c cp /data/data/com.kakao.talk/databases/KakaoTalk.db /sdcard/KaKaoTalkBackup/KaKaoTalks.db");

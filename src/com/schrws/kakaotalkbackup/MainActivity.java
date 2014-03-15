@@ -36,6 +36,12 @@ public class MainActivity extends FragmentActivity {
 		// Set up the ViewPager with the sections adapter.
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
+		
+		try{
+			Runtime.getRuntime().exec("su -c mkdir /sdcard/KaKaoTalkBackUp");
+		}
+		catch(IOException e){
+		}
 
 	}
 
