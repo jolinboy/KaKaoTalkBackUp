@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ValidFragment">
+        <ignore path="src/com/schrws/kakaotalkbackup/backup/BackUp.java" />
+        <ignore path="src/com/schrws/kakaotalkbackup/developer/Developer.java" />
+        <ignore path="src/com/schrws/kakaotalkbackup/restore/Restore.java" />
+    </issue>
+</lint>
